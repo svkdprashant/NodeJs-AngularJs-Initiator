@@ -1,0 +1,15 @@
+{
+	"ERROR_SOMETHING_WENT_WRONG": "Etwas ist schief gelaufen!!",
+	"INVALID_TOKEN": "Bitte geben Sie einen gültigen Token an.",
+	"ERROR_VALID_EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse an.",
+	"ERROR_VALID_FIRST_NAME": "Bitte geben Sie einen gültigen Vornamen an.",
+	"ERROR_VALID_PASSWORD": "Bitte geben Sie ein gültiges Passwort an.",
+	"ERROR_DEVICE_ID": "Bitte geben Sie eine gültige Geräte-ID an",
+	"ERROR_EMAIL_EXISTS": "E-Mail ist bereits registriert. Bitte loggen Sie sich ein.",
+	"ERROR_INCORRECT_PASSWORD": "Bitte geben Sie die richtige E-Mail-Adresse / das richtige Passwort ein.",
+	"ERROR_INACTIVATED": "Ihr Konto wurde aktiviert.",
+	"ERROR_EMAIL_NOT_EXISTS": "E-Mail existiert nicht im System. Bitte melden Sie sich an, um fortzufahren.",
+	"ERROR_ADMIN_EMAIL_NOT_EXISTS": "E-Mail existiert nicht im System.",
+	"ERROR_LOGIN_BY": "Bitte geben Sie einen gültigen Login von an.",
+	"ERROR_LOGIN_SOCIAL_ID": "Bitte geben Sie eine eindeutige soziale ID an."
+}

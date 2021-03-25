@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "b6f06b3d-b74c-4c24-a375-df1d4c9e38c0",
+		"name": "NodeJs-AngularJs-Initiator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{API_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"description": "en/de",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"firstname\": \"Prashant\",\r\n\t\"lastname\": \"Jethwa\",\r\n    \"email\": \"svkdprashant@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"dob\": \"1990-12-11\",\r\n\t\"mobile\": \"+6123232322\",\r\n    \"device\": {\r\n\t\t\"device_id\": \"5555-B15B-41BF-9BCA-5E59ABAA13F3\",\r\n        \"device_token\": \"cOVzc9ONMDw:APA91bEDAZ8L4c4WQvObkIJaB3OfQ2-1ARHRkiKek7nkBsG2AI58Hw8HjNIK1Va7PdhHLsbKfxQj048NzTG9fVoNik1KUwHh6_A86va51SMYmlaXOdK5DZAWU5tPXRvL1dUhO-BwVV8B\",\r\n        \"os_type\": \"iOS\",\r\n        \"model\": \"x86_64\",\r\n        \"app_version\": \"1.5\",\r\n        \"os_version\": \"13.3\",\r\n        \"latitude\": \"-33.8634\",\r\n        \"longitude\": \"151.211\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/auth/signup",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				},
+				"description": "<table>\n<tr>\t<td><b>Param</b></td> <td><b> Required </b> </td>\t<td><b>Possible Values</b></td>\t<td><b>Description</b></td>\t</tr>\n<tr>\t<td>firstname</td> <td>Yes</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>lastname</td> <td>No</td>\t<td></td>\t<td> </td>\t</tr>\n<tr>\t<td>email</td> <td>Yes</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>password</td> <td>Yes</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>dob</td> <td>No</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>mobile</td> <td>No</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>device</td> <td>No</td>\t<td></td>\t<td>Pass device informations as below\ndevice_id (Required)\ndevice_token (Not required)\nos_type (Not required)\nmodel (Not required)\napp_version (Not required)\nos_version (Not required)\nlatitude (Not required)\nlongitude (Not required)\n</td>\t</tr>\n</table>"
+			},
+			"response": []
+		},
+		{
+			"name": "Login (Simple)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{API_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"description": "en/de",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"svkdprashant@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"device\": {\r\n\t\t\"device_id\": \"5555-B15B-41BF-9BCA-5E59ABAA13F3\",\r\n        \"device_token\": \"cOVzc9ONMDw:APA91bEDAZ8L4c4WQvObkIJaB3OfQ2-1ARHRkiKek7nkBsG2AI58Hw8HjNIK1Va7PdhHLsbKfxQj048NzTG9fVoNik1KUwHh6_A86va51SMYmlaXOdK5DZAWU5tPXRvL1dUhO-BwVV8B\",\r\n        \"os_type\": \"iOS\",\r\n        \"model\": \"x86_64\",\r\n        \"app_version\": \"1.5\",\r\n        \"os_version\": \"13.3\",\r\n        \"latitude\": \"-33.8634\",\r\n        \"longitude\": \"151.211\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/auth/login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "<table>\n<tr>\t<td><b>Param</b></td> <td><b> Required </b> </td>\t<td><b>Possible Values</b></td>\t<td><b>Description</b></td>\t</tr>\n<tr>\t<td>email</td> <td>Yes</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>password</td> <td>Yes</td>\t<td></td>\t<td> </td>\t</tr>\n<tr>\t<td>device</td> <td>No</td>\t<td></td>\t<td>Pass device informations as below\ndevice_id (Required)\ndevice_token (Not required)\nos_type (Not required)\nmodel (Not required)\napp_version (Not required)\nos_version (Not required)\nlatitude (Not required)\nlongitude (Not required)\n</td>\t</tr>\n</table>"
+			},
+			"response": []
+		},
+		{
+			"name": "Login by social media",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{API_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"description": "en/de",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"firstname\": \"Prashant\",\r\n\t\"lastname\": \"Jethwa\",\r\n    \"email\": \"svkdprashant@gmail.com\",\r\n    \"login_by\": \"Apple\",\r\n    \"social_id\": \"11000178.d7119a93385a4e85a11056135861cf75.0629\",\r\n    \"device\": {\r\n        \"device_id\": \"5555-B15B-41BF-9BCA-5E59ABAA13F3\",\r\n        \"device_token\": \"cOVzc9ONMDw:APA91bEDAZ8L4c4WQvObkIJaB3OfQ2-1ARHRkiKek7nkBsG2AI58Hw8HjNIK1Va7PdhHLsbKfxQj048NzTG9fVoNik1KUwHh6_A86va51SMYmlaXOdK5DZAWU5tPXRvL1dUhO-BwVV8B\",\r\n        \"os_type\": \"iOS\",\r\n        \"model\": \"x86_64\",\r\n        \"app_version\": \"1.5\",\r\n        \"os_version\": \"13.3\",\r\n        \"latitude\": \"-33.8634\",\r\n        \"longitude\": \"151.211\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/auth/loginBySocialMedia",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"loginBySocialMedia"
+					]
+				},
+				"description": "<table>\n<tr>\t<td><b>Param</b></td> <td><b> Required </b> </td>\t<td><b>Possible Values</b></td>\t<td><b>Description</b></td>\t</tr>\n<tr>\t<td>firstname</td> <td>Yes</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>lastname</td> <td>No</td>\t<td></td>\t<td> </td>\t</tr>\n<tr>\t<td>email</td> <td>Yes</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>login_by</td> <td>Yes</td>\t<td>Google/Facebook/Apple</td>\t<td></td>\t</tr>\n<tr>\t<td>device</td> <td>No</td>\t<td></td>\t<td>Pass device informations as below\ndevice_id (Required)\ndevice_token (Not required)\nos_type (Not required)\nmodel (Not required)\napp_version (Not required)\nos_version (Not required)\nlatitude (Not required)\nlongitude (Not required)\n</td>\t</tr>\n</table>"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{API_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "de",
+						"description": "en/de",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJzdmtkcHJhc2hhbnRAZ21haWwuY29tIiwiaWF0IjoxNjE2NjcyNTE4fQ.C5O-GlqLZ2Tf6bDtwTZ0lWaJ7bcoZlx0CYQaApeoPXU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api/user/getUserDetail?user_id=1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"getUserDetail"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{API_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"description": "en/de",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJzdmtkcHJhc2hhbnRAZ21haWwuY29tIiwiaWF0IjoxNjE2NjcyNTE4fQ.C5O-GlqLZ2Tf6bDtwTZ0lWaJ7bcoZlx0CYQaApeoPXU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user_id\": 1,\r\n\t\"firstname\": \"Prashant\",\r\n\t\"lastname\": \"Jethwa-Updated\",\r\n    \"dob\": \"1990-12-10\",\r\n\t\"mobile\": \"+6111111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/user/updateUserDetail",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"updateUserDetail"
+					]
+				},
+				"description": "<table>\n<tr>\t<td><b>Param</b></td> <td><b> Required </b> </td>\t<td><b>Possible Values</b></td>\t<td><b>Description</b></td>\t</tr>\n<tr>\t<td>user_id</td> <td>Yes</td>\t<td></td>\t<td> Logged in user id </td>\t</tr>\n<tr>\t<td>firstname</td> <td>Yes</td>\t<td></td>\t<td> </td>\t</tr>\n<tr>\t<td>lastname</td> <td>No</td>\t<td></td>\t<td> </td>\t</tr>\n<tr>\t<td>dob</td> <td>No</td>\t<td></td>\t<td></td>\t</tr>\n<tr>\t<td>mobile</td> <td>No</td>\t<td></td>\t<td></td>\t</tr>\n</table>"
+			},
+			"response": []
+		}
+	]
+}

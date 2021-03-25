@@ -1,0 +1,37 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "node-api-initiator",
+    "db_host": {
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "portal_url": "http://localhost:8000/",
+    "api_token": "xtsnKCrrYxqvSMs0rubZRsSWyPvx7zMq"
+  },
+  "test": {
+    "username": "root",
+    "password": "Root@123",
+    "database": "node-api-initiator",
+    "db_host": {
+      "host": "localhost",
+      "dialect": "mysql",
+      "logging": false
+    },
+    "portal_url": "http://localhost:8000/",
+    "api_token": "IiA1E66QcRehVnfd0Tr2RVzpGckCjy7N"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "node-api-initiator",
+    "db_host": {
+      "host": "localhost",
+      "dialect": "mysql",
+      "logging": false
+    },
+    "portal_url": "http://localhost:8000/",
+    "api_token": "sR4HBys8lRmQpVKCRAkohtuya2eyOG1O"
+  }
+}

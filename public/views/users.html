@@ -1,0 +1,75 @@
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <div ng-include="'views/parts/nav.html'" include-replace></div>
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <div ng-include="'views/parts/top.html'" include-replace></div>
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary float-left">User List</h6>
+                        <!-- <a class="btn btn-primary float-right btn-sm" href="#!/user">Add Sport</a> -->
+                    </div>
+                    <div class="card-body" ng-init="vm.listUsers()">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Mobile</th>
+                                        <th>DOB</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-if="vm.dataLoading">
+                                        <td class="text-center" colspan="5">
+                                            <span class="spinner-border spinner-border-m" role="status" aria-hidden="true"></span>
+                                        </td>
+                                    </tr>
+                                    <tr ng-repeat="users in vm.usersList" ng-if="vm.usersList && !vm.dataLoading">
+                                        <td>{{users.firstname}} {{users.lastname}}</td>
+                                        <td>{{users.email}}</td>
+                                        <td>{{users.mobile}}</td>
+                                        <td>{{users.dob}}</td>
+                                        <td class="text-center">
+                                            <!-- <a class="fa fa-edit text-decoration-none" href="#!/user/{{users.id}}"></a> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <div ng-include="'views/parts/footer.html'" include-replace></div>
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Page level plugins -->
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>

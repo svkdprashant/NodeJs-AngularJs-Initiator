@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-angularjs-initiator",
+  "version": "1.0.0",
+  "description": "NodeJs and AngularJS Initiator. This project will help to kick start any project which has API in NodeJs and front end in AngularJs. It also includes error messages in multi-language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Prashant Jethwa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto-js": "^4.0.0",
+    "express": "^4.17.1",
+    "i18n": "^0.10.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.12"
+  }
+}

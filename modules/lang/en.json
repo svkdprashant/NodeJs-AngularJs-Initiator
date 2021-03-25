@@ -1,0 +1,16 @@
+{
+	"ERROR_SOMETHING_WENT_WRONG": "Something went wrong!!",
+	"INVALID_TOKEN": "Please provide valid token.",
+	"ERROR_VALID_EMAIL": "Please provide valid email.",
+	"ERROR_VALID_FIRST_NAME": "Please provide valid firstname.",
+	"ERROR_VALID_PASSWORD": "Please provide valid password.",
+	"ERROR_DEVICE_ID": "Please provide valid device information.",
+	"ERROR_EMAIL_EXISTS": "Email is already registered. Please login.",
+	"ERROR_INCORRECT_PASSWORD": "Please enter correct email/password.",
+	"ERROR_INACTIVATED": "Your account has been In-Activated.",
+	"ERROR_ACCOUNT_BANNED": "Please activate your account by verifying email address.",
+	"ERROR_EMAIL_NOT_EXISTS": "Email does not exists in system. Please sign up to continue.",
+	"ERROR_ADMIN_EMAIL_NOT_EXISTS": "Email does not exists in system.",
+	"ERROR_LOGIN_BY": "Please provide valid login by.",
+	"ERROR_LOGIN_SOCIAL_ID": "Please provide unique social id."
+}
