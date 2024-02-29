@@ -17,6 +17,9 @@ router.get('/', function(req, res, next) {
     return response.success(res, "");
 });
 
+//
+// Get user detail
+//
 router.get('/getUserDetail', function(req, res, next) {
     const user_id = req.query.user_id
 
